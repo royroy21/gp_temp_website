@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta
+        http-equiv="Content-Type"
+        content="text/html; charset=utf-8"
+    />
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+    />
+    <link
+        rel="shortcut icon" type="image/svg"
+        href="{{ url_for("static", filename="images/pig.svg") }}"
+    />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link href="https://fonts.googleapis.com/css?family=Libre Barcode 39 Text" rel="stylesheet" />
+    <style>
+        body {
+            height: 90vh;
+            display: flex;
+            background: url("../static/images/music-decks.jpg") no-repeat center center fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            background-color: black;
+            font-family: "Libre Barcode 39 Text", cursive;
+        }
+        #content {
+            position: relative;
+        }
+        #message {
+            position: absolute;
+            bottom: 50px;
+            right: 50px;
+            color: red;
+            font-size: 45px;
+        }
+    </style>
+    <title>GigPig.fm</title>
+</head>
+<body>
+    <div id="content"></div>
+    <div id="message">
+        The GigPig<br />
+        is coming.<br />
+    </div>
+</body>
+</html>
